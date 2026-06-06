@@ -1121,6 +1121,11 @@
       flex-wrap: nowrap;
     }
   }
+  .xs\:items-start {
+    @media (width >= 480px) {
+      align-items: flex-start;
+    }
+  }
   .sm\:mx-0 {
     @media (width >= 40rem) {
       margin-inline: calc(var(--spacing) * 0);
