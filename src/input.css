@@ -42,11 +42,11 @@ html{
 }
 
 @utility bg-home{
-  background-image:url('../public/images/headerBgDesktop.webp');
+  background-image:url('./images/headerBgDesktop.webp');
   background-repeat: no-repeat;
 }
 @utility bg-home-mobile{
-  background-image:url('../public/images/headerBgDesktop.png');
+  background-image:url('./images/headerBgDesktop.png');
   background-repeat: no-repeat;
 }
 
