@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+html{
+  scroll-behavior: smooth;
+}
+
+@theme {
+  /* brownColor custom */
+  --color-brown-900:#634832;
+  --color-brown-600:#967259;
+  --color-brown-300:#DBC1AC;
+  --color-brown-100:#ECE0D1;
+  /* boxShadow custom*/
+  --shadow-normal:0 1px 10px 0 rgba(0, 0, 0, 0.05);
+  /* borderRadius custom */
+  --radius-32px:2rem;
+  /* Letter spacing  */
+  --tracking-tightest: -0.065em; 
+}
+
+@layer components{
+  .content-befor{
+    @apply w-1 h-1 rounded-full bg-orange-300 leading-1
+  }
+  .circle-main{
+    @apply w-[203px] h-[203px] rounded-full text-white flex justify-center items-center  border left-[-156px] bottom-0 right-0 mx-auto
+  }
+  .circl-m{
+    @apply  w-[145px] h-[145px] rounded-full text-white border
+  }
+  .circl-s{
+    @apply  w-[95px] h-[95px] rounded-full text-white border
+  }
+}
+
+
+  
+
+
+@theme{
+  --breakpoint-xs:480px;
+}
+
+@utility bg-home{
+  background-image:url('../public/images/headerBgDesktop.webp');
+  background-repeat: no-repeat;
+}
+@utility bg-home-mobile{
+  background-image:url('../public/images/headerBgDesktop.png');
+  background-repeat: no-repeat;
+}
+
+
+
+  
+
+@utility products{
+  background-image:linear-gradient(rgba(243,244,246,0.65),rgba(243,244,246,0.65)), url('../public/images/products-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 818px;
+}
+@utility categorie-right{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.1)),url('../public/images/categories/category-right.jpg');
+  background-repeat: no-repeat;
+}
+@utility categorie-left{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.1)),url('../public/images/categories/category-left.jpg');
+  background-repeat: no-repeat;
+}
+
+@custom-variant child (& > *);
+@custom-variant childhover (& > * :hover);
+
+@utility container {
+  max-width:80rem;
+  margin-inline:auto;
+  padding-inline:1rem;
+  @media(width>=64rem){
+    padding-inline:0.625rem;
+  }
+}
+.coffe-club__bg{
+  background: linear-gradient(to right,rgba(16, 185, 129, 1),rgba(5, 150, 105, 1));
+}
+.gift{
+  background: linear-gradient(to right,rgba(254, 215, 170, 1),rgba(253, 186, 116, 1));
+}
+.tel{
+  background: linear-gradient(to right,rgba(254, 215, 170, 1),rgba(253, 186, 116, 1));
+}
+
