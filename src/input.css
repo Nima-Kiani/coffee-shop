@@ -55,17 +55,17 @@ html{
   
 
 @utility products{
-  background-image:linear-gradient(rgba(243,244,246,0.65),rgba(243,244,246,0.65)), url('../public/images/products-bg.png');
+  background-image:linear-gradient(rgba(243,244,246,0.65),rgba(243,244,246,0.65)), url('./images/products-bg.png');
   background-repeat: no-repeat;
   background-size: 100%;
   height: 818px;
 }
 @utility categorie-right{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.1)),url('../public/images/categories/category-right.jpg');
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.1)),url('./images/categories/category-right.jpg');
   background-repeat: no-repeat;
 }
 @utility categorie-left{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.1)),url('../public/images/categories/category-left.jpg');
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.1)),url('./images/categories/category-left.jpg');
   background-repeat: no-repeat;
 }
 
